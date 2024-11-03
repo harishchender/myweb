@@ -12,6 +12,11 @@
 		<docker.image.prefix>kammana</docker.image.prefix>
 		<sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
 
+		<maven.compiler.source>11</maven.compiler.source> <!-- Use 11 or 17 depending on your Java version -->
+    		<maven.compiler.target>11</maven.compiler.target>
+    		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
 	</properties>
 	<dependencies>
 
@@ -45,11 +50,6 @@
 	    </pluginRepository>
 	</pluginRepositories>
 
-	<properties>
-    <maven.compiler.source>11</maven.compiler.source> <!-- Use 11 or 17 depending on your Java version -->
-    <maven.compiler.target>11</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-</properties>
 
 <build>
     <plugins>
