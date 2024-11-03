@@ -45,5 +45,25 @@
 	    </pluginRepository>
 	</pluginRepositories>
 
+	<properties>
+    <maven.compiler.source>11</maven.compiler.source> <!-- Use 11 or 17 depending on your Java version -->
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Ensure this is 3.8.1 or higher -->
+            <configuration>
+                <source>${maven.compiler.source}</source>
+                <target>${maven.compiler.target}</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 	
 </project>
